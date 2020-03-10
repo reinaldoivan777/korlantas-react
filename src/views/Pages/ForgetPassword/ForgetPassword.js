@@ -12,9 +12,8 @@ import {
   InputGroupText,
   Row
 } from "reactstrap";
-import { Link } from "react-router-dom";
 
-class Login extends Component {
+class ForgetPassword extends Component {
   render() {
     return (
       <div className="app flex-row align-items-center">
@@ -24,8 +23,8 @@ class Login extends Component {
               <Card className="p-4">
                 <CardBody>
                   <Form>
-                    <h1>Login</h1>
-                    <p className="text-muted">Sign In to your account</p>
+                    <h1>Forget Password</h1>
+                    <p className="text-muted">Forget Password</p>
                     <InputGroup className="mb-3">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
@@ -38,30 +37,11 @@ class Login extends Component {
                         autoComplete="username"
                       />
                     </InputGroup>
-                    <InputGroup className="mb-4">
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="icon-lock"></i>
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
-                        type="password"
-                        placeholder="Password"
-                        autoComplete="current-password"
-                      />
-                    </InputGroup>
                     <Row>
                       <Col xs="6">
                         <Button color="primary" className="px-4">
-                          Login
+                          Forget Password
                         </Button>
-                      </Col>
-                      <Col xs="6" className="text-right">
-                        <Link to="/forget-password">
-                          <Button color="link" className="px-0">
-                            Forgot password?
-                          </Button>
-                        </Link>
                       </Col>
                     </Row>
                   </Form>
@@ -75,4 +55,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default ForgetPassword;
