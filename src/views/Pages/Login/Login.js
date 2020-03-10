@@ -52,9 +52,11 @@ class Login extends Component {
                     </InputGroup>
                     <Row>
                       <Col xs="6">
-                        <Button color="primary" className="px-4">
-                          Login
-                        </Button>
+                        <Link to="/dashboard">
+                          <Button color="primary" className="px-4">
+                            Login
+                          </Button>
+                        </Link>
                       </Col>
                       <Col xs="6" className="text-right">
                         <Link to="/forget-password">
